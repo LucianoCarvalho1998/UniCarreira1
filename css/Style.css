@@ -1,0 +1,177 @@
+/* Estilos para o cabeçalho e menu */
+header {
+    background-color: #191970;
+    color: white;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilos para a seção de conteúdo */
+#conteudo {
+    margin: 20px;
+}
+
+/* Outros estilos conforme necessário */
+/* Estilos para a lista de vagas */
+.vagas-lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+.vaga-item {
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.vaga-item .vaga-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vaga-titulo {
+    font-size: 20px;
+    margin: 0;
+}
+
+.vaga-descricao {
+    font-size: 16px;
+    color: #444;
+    margin: 10px 0;
+}
+
+.candidatar {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.candidatar:hover {
+    background-color: #0055a2;
+}
+
+
+/* Estilos para a lista de vagas (inicialmente oculta) */
+.vagas-lista {
+    list-style-type: none;
+    padding: 0;
+    opacity: 0; /* Inicialmente, a lista estará invisível */
+    transform: translateY(20px); /* Inicialmente, a lista estará ligeiramente deslocada para baixo */
+    transition: opacity 1s ease, transform 1s ease;
+    animation: aparecer 1s ease forwards; /* Adicione uma animação CSS */
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.vaga-item {
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* Outros estilos permanecem os mesmos */
+
+/* Outros estilos permanecem os mesmos */
+/* Estilos para o rodapé */
+footer {
+    background-color:#191970;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.rodape-info, .rodape-contato, .rodape-sigam-nos {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.rodape-info h3, .rodape-contato h3, .rodape-sigam-nos h3 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.rodape-sigam-nos a {
+    color: #fff;
+    text-decoration: none;
+    margin: 5px;
+}
+
+/* Outros estilos permanecem os mesmos */
+/* Aumentar o tamanho do campo de pesquisa */
+#campo-busca {
+    width: 300px; /* Defina a largura desejada */
+    height: 25px; /* Defina a altura desejada */
+    font-size: 16px; /* Tamanho da fonte */
+    margin-left: 25px;
+}
+/* Aumentar o tamanho do botão */
+button[type="submit"] {
+    width: 150px; /* Defina a largura desejada */
+    height: 25px; /* Defina a altura desejada */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilos para o botão de ordenação e menu suspenso */
+.ordenar-vagas {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#ordenar-botao {
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.opcoes-ordenacao {
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+    display: none; /* Inicialmente, o menu está oculto */
+}
+
+.opcoes-ordenacao li {
+    margin: 5px 0;
+}
+
+.opcoes-ordenacao a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 5px;
+}
+
+/* Estilo para mostrar o menu suspenso quando o botão é clicado */
+#ordenar-botao:focus + .opcoes-ordenacao {
+    display: block;
+}

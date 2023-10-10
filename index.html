@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Style.css">
+    <title>Empresa de Recrutamento Online</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+           <img src="" alt="">
+           <p> <span style="font-family:Arial, sans-serif;">UniCarreira</span></p>
+     
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Página Inicial</a></li>
+                <li><a href="/Vagas">Vagas de Emprego</a></li>
+                <li><a href="/Candidatos">Candidatos</a></li>
+                <li><a href="/Contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="busca">
+        <h1>Encontre o emprego dos seus sonhos</h1>
+        <form>
+            <input type="text" id="campo-busca" placeholder="Digite o cargo desejado">
+            <button type="submit">Buscar</button>
+        </form>
+    </section>
+    
+<section id="conteudo">
+    <h2>Vagas de Emprego Disponíveis</h2>
+    <div class="ordenar-vagas">
+        <button id="ordenar-botao">Ordenar Vagas</button>
+        <ul class="opcoes-ordenacao">
+            <li><a href="#" data-ordenacao="recentes">Mais Recentes</a></li>
+            <li><a href="#" data-ordenacao="antigas">Mais Antigas</a></li>
+            <li><a href="#" data-ordenacao="salario">Salário Crescente</a></li>
+            <li><a href="#" data-ordenacao="reverso">Ordem Reversa</a></li>
+        </ul>
+    </div>
+    <ul id="lista-vagas" class="vagas-lista">
+        <li class="vaga-item">
+          
+            <h3 class="vaga-titulo"><span style="color: darkblue;">Desenvolvedor Web</span></h3>
+
+            <p class="vaga-descricao">Procuramos um desenvolvedor web experiente para se juntar à nossa equipe...</p>
+            <p class="vaga-salario">Salário: R$ 5.000,00 - R$ 7.000,00</p>
+            <p class="vaga-horario">Horário de Trabalho: Segunda a Sexta, 9h às 18h</p>
+            <p class="vaga-requisitos">Requisitos: Experiência em HTML, CSS, JavaScript, conhecimento em frameworks...</p>
+            <button class="candidatar" data-vaga="Desenvolvedor Web">Candidatar-se</button>
+        </li>
+        <li class="vaga-item">
+            <h3 class="vaga-titulo"><span Style="color: darkblue;">Analista de Marketing Digital </span></h3>
+            <p class="vaga-descricao">Estamos em busca de um analista de marketing digital para...</p>
+            <p class="vaga-salario">Salário: R$ 4.000,00 - R$ 6.000,00</p>
+            <p class="vaga-horario">Horário de Trabalho: Segunda a Sexta, 8h às 17h</p>
+            <p class="vaga-requisitos">Requisitos: Experiência em estratégias de marketing digital, conhecimento em SEO...</p>
+            <button class="candidatar" data-vaga="Analista de Marketing Digital">Candidatar-se</button>
+        </li>
+        <!-- Adicione mais vagas aqui -->
+          <li class="vaga-item">
+            <h3 class="vaga-titulo"><span style="color: darkblue;">Desenvolvedor Java</span></h3>
+            <p class="vaga-descricao">Estamos em busca de um desenvolvedor Java para...</p>
+            <p class="vaga-salario">Salário: R$ 7.000,00 - R$ 8.000,00</p>
+            <p class="vaga-horario">Horário de Trabalho: Segunda a Sexta, 8h às 17h</p>
+            <p class="vaga-requisitos">Requisitos: Experiência em Java, Spring Framework, Hibernate e SQL...</p>
+            <button class="candidatar" data-vaga="Desenvolvedor Java">Candidatar-se</button>
+        </li>
+         <li class="vaga-item">
+           <h3 class="vaga-titulo"><span style="color: darkblue;">Desenvolvedor JavaScript</span></h3>
+            <p class="vaga-descricao">Estamos em busca de um desenvolvedor JavaScript para...</p>
+            <p class="vaga-salario">Salário: R$ 7.000,00 - R$ 8.000,00</p>
+            <p class="vaga-horario">Horário de Trabalho: Segunda a Sexta, 8h às 17h</p>
+            <p class="vaga-requisitos">Requisitos: Experiência em JavaScript, BootStrap e SQL...</p>
+            <button class="candidatar" data-vaga="Desenvolvedor JavaScript">Candidatar-se</button>
+        </li>
+          <li class="vaga-item">
+           <h3 class="vaga-titulo"><span style="color: darkblue;">Estágio Técnico</span></h3>
+            <p class="vaga-descricao">Estamos em busca de um desenvolvedor JavaScript para...</p>
+            <p class="vaga-salario">Salário: R$ 7.000,00 - R$ 8.000,00</p>
+            <p class="vaga-horario">Horário de Trabalho: Segunda a Sexta, 8h às 17h</p>
+            <p class="vaga-requisitos">Requisitos: Experiência em JavaScript, BootStrap e SQL...</p>
+            <button class="candidatar" data-vaga="Desenvolvedor JavaScript">Candidatar-se</button>
+        </li>
+    </ul>
+</section>
+
+
+ 
+
+<footer>
+    <div class="rodape-info">
+        <h3>UniCarreira Recrutamento e Seleção </h3>
+        <p>Somos uma empresa líder em recrutamento online, conectando talentos às melhores oportunidades de emprego.</p>
+    </div>
+    <div class="rodape-contato">
+        <h3>Contato</h3>
+        <p>Email: contato@empresa-recrutamento.com</p>
+        <p>Telefone: (123) 456-7890</p>
+        <p>Endereço: Rua da Empresa, 12345, Cidade</p>
+    </div>
+    <div class="rodape-sigam-nos">
+        <h3>Sigam-nos</h3>
+        <a href="#">LinkedIn</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+    </div>
+</footer>
+
+
+    <script src="js/Script.js"></script>
+</body>
+</html>
